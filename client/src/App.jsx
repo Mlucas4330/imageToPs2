@@ -33,7 +33,7 @@ const App = () => {
     const [href, setHref] = useState()
     const downloadRef = useRef(null)
 
-    const baseURL = import.meta.env.VITE_NODE_ENV === 'development' ? import.meta.env.VITE_API_URL : 'api/'
+    const baseURL = import.meta.env.VITE_API_URL
 
     const handleInputImage = e => {
         const image = e.target.files[0]
