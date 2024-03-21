@@ -162,6 +162,7 @@ const App = () => {
                     md: '1fr 1fr'
                 }}
                 p={5}
+                gap={5}
             >
                 <GridItem>
                     <Center flexDirection={'column'} gap={5}>
@@ -206,6 +207,7 @@ const App = () => {
                     sm: '1fr',
                     md: '1fr 1fr'
                 }}
+                gap={5}
             >
                 <GridItem>
                     <Text fontSize={'2xl'}>
