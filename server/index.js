@@ -12,6 +12,14 @@ app.use(json())
 
 app.post('/api/apply-filter', async (req, res) => {
   try {
+    if (!req.body.imageURL) {
+      return res.status(500).send({
+        code: 500,
+        message: 'Imagem não encontrada',
+        data: null
+      })
+    }
+
     const replicate = new Replicate({
       auth: process.env.REPLICATE_API_TOKEN
     })
